@@ -1,0 +1,42 @@
+.more-info-section {
+
+    margin-bottom: 170px;
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgba(57, 78, 93, 1);
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+
+    .text-content {
+        h3 {
+            color: rgba(57, 78, 93, 1);
+            font-size: 1.13rem;
+            font-weight: 700;
+        }
+
+        p {
+            max-width: 434px;
+            color: rgba(24, 35, 51, 1);
+            font-weight: normal;
+            font-size: 1rem;
+        }
+    }
+
+    .hero-image {
+        margin-right: 120px;
+
+        img {
+            width: 84%;
+        }
+    }
+}

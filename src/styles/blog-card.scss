@@ -1,0 +1,40 @@
+.blog-card {
+    width: 220px;
+    margin: 0px 7px;
+    cursor: pointer;
+
+
+    img {
+        width: 100%;
+    }
+
+    .title {
+        color: rgba(57, 78, 93, 1);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        color: rgba(24, 35, 51, 1);
+        color: #182333;
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+
+    &:hover {
+        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
+        margin: 0px 12px -7px 12px;
+
+        .title,
+        .text {
+            padding-left: 12px;
+        }
+
+        .text {
+            margin-bottom: 10px;
+        }
+
+    }
+}

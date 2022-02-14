@@ -1,0 +1,43 @@
+.nav-link {
+    height: 100%;
+    line-height: 60px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    a {
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgb(57, 78, 93);
+        outline: none;
+        text-decoration: none;
+    }
+
+    span {
+        display: none;
+        width: 18px;
+        height: 18px;
+        background-color: rgba(61, 134, 191, 1);
+        position: absolute;
+        border-radius: 50%;
+        bottom: -9px;
+        left: calc(50% - 9px);
+    }
+
+    &.active {
+        span {
+            display: block;
+            background-color: rgba(61, 134, 191, 1);
+        }
+    }
+
+    &:hover {
+        &:not(.active) {
+            span {
+                display: block;
+                opacity: 0.5;
+            }
+        }
+    }
+}

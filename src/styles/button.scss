@@ -1,0 +1,17 @@
+.button {
+    outline: none;
+    border-radius: 32px;
+    border: 1px solid rgba(61, 134, 191, 1);
+    width: 140px;
+    height: 38px;
+    color: rgba(66, 133, 188, 1);
+    background-color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(66, 133, 188, 1);
+        color: #fff;
+    }
+}
