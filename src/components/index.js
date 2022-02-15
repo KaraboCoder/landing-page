@@ -6,6 +6,7 @@ import MoreInfoSection from "./sections/MoreInfoSection";
 import CompaniesSection from "./sections/CompaniesSection";
 import BlogCard from "./BlogCard";
 import Button from "./Button";
+import Menu from "./Menu";
 
 export {
     NavLink,
@@ -15,5 +16,6 @@ export {
     MoreInfoSection,
     CompaniesSection,
     BlogCard,
-    Button
+    Button,
+    Menu
 }

@@ -1,7 +1,8 @@
-import { CompaniesSection, Header, HeroSection, MoreInfoSection, BlogCard, Button } from './components';
+import { CompaniesSection, Header, HeroSection, MoreInfoSection, BlogCard, Button, Menu } from './components';
 import './styles/App.scss';
 import LogoWhite from './images/Logo-white.svg';
 import CardImg from './images/card-img.png'
+import { useState } from 'react';
 
 const BLOGS = [
   {
@@ -27,9 +28,17 @@ const BLOGS = [
 ]
 
 function App() {
+  const [menuState, setMenuState] = useState(false)
+
+  const toggleMenu = () => {
+    setMenuState(!menuState)
+  }
   return (
     <div className="App">
-      <Header />
+      <Header toggleMenu={toggleMenu} menuState={menuState} />
+      {
+        menuState && <Menu />
+      }
       <HeroSection />
       <MoreInfoSection />
       <CompaniesSection />

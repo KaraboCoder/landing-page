@@ -32,3 +32,24 @@ footer {
         margin-left: 30px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .blogs {
+        height: auto;
+
+        .content {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        .button-wrapper {
+            margin-top: 0;
+            margin-bottom: 70px;
+        }
+    }
+
+    footer {
+        padding: 0 60px;
+    }
+}

@@ -40,3 +40,29 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .more-info-section {
+
+        margin-bottom: 56px;
+        padding: 0 17px;
+
+        .content-wrapper {
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        .text-content {
+            p {
+                line-height: 1.6rem;
+            }
+        }
+
+        .hero-image {
+            display: none;
+        }
+    }
+}

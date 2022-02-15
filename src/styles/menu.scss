@@ -1,0 +1,42 @@
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    margin-top: 20px;
+    padding-left: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .menu-link {
+        display: block;
+        text-decoration: none;
+        color: #394E5D;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 31px;
+
+        span {
+            display: inline-block;
+            margin-right: 8px;
+            width: 8px;
+            vertical-align: middle;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        &.active {
+            span {
+                background-color: #3d86bf;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .menu {
+        display: none;
+    }
+}

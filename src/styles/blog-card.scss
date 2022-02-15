@@ -38,3 +38,21 @@
 
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .blog-card {
+        width: 100%;
+        margin-bottom: 46px;
+
+        &:hover {
+            box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.16);
+            border-radius: 4px;
+            margin-bottom: 46px;
+        }
+    }
+
+    .blog-card:nth-child(n+3) {
+        display: none;
+    }
+}
